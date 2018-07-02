@@ -12,3 +12,9 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/myothantkyaw-dev/ecommerce_api.git
 git push -u origin master
+
+
+
+To upload complted file to git
+git add .
+git commit -m 'Some message'
