@@ -18,3 +18,35 @@ git push -u origin master
 To upload complted file to git
 git add .
 git commit -m 'Some message'
+git push -u origin master
+
+
+create faker
+=======
+php artisan make:faker ProductFaker
+php artisan make:faker ReviewFaker
+
+
+
+https://github.com/fzaninotto/Faker go to usage
+
+$factory->define(App\Product::class, function (Faker $faker) {
+    return [
+        'name'=>$faker->word,
+        'detail'=>$faker->paragraph,
+        'price'=>$faker->numberBetween(100,1000),
+        'stock'=>$faker->randomDigit,
+        'discount'=>$faker->numberBetween(1,30)
+    ];
+});
+
+DatabaseSeeder.php =>
+  // $this->call(UsersTableSeeder::class);
+        factory(Product::class,50)->create();
+        factory(Review::class,300)->create();
+
+        php artisan DB:seed
+
+
+        
+
