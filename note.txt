@@ -48,5 +48,5 @@ DatabaseSeeder.php =>
         php artisan DB:seed
 
 
-        
+
 
