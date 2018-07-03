@@ -50,3 +50,8 @@ DatabaseSeeder.php =>
 
 
 
+Create Resource
+=========
+
+
+
